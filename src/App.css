@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #000;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.container{
+  max-width: 1400px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+  /* width: 3px; */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b3b2b2; 
+  }
+  
+  .active{
+    background-color: #474545;
+  }
+  .homepage{
+    background: linear-gradient(180.00deg, rgb(51, 51, 163) 5.086%, rgb(18, 18, 18) 55.397%);
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox uchun */
+    -ms-overflow-style: none; /* Internet Explorer uchun */
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none; /* Safari va Chrome uchun */
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin: 0 10px; /* Slide orasidagi bo'shlik */
+    transition: transform 5s ease-in-out; /* Animatsiya uchun */
+    border-radius: 10px;
+  }
+  
+ 
+  
+  .slider-controls {
+    margin-top: 10px; /* Sliderni boshqarish uchun masofa yuqoridan */
+  }
+  
+  .slider-controls input {
+    width: 100%;
+    display: none; /* Inputni yashirish */
+  }
+  .cardbek{
+    transition: all 0.5s ease-in;
+  }
